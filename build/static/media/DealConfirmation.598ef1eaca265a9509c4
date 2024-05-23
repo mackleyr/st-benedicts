@@ -1,0 +1,18 @@
+import React from 'react';
+import Progress from './Progress';
+
+const DealConfirmation = () => {
+  return (
+    <div className="w-full h-full min-h-screen flex flex-col items-center justify-center p-4 bg-white">
+      <Progress step={3} className="mt-4" />
+      <h1 className="text-2xl font-bold mb-2 text-center">Deal Confirmed!</h1>
+      <p className="text-center">Show this screen to the cashier to redeem your deal.</p>
+      <img src="https://via.placeholder.com/100x100" alt="QR Code" className="h-24 w-24 my-4" />
+      <div className="w-full bg-[#FF4713] text-white text-center py-2">
+        Powered by Friends & Family
+      </div>
+    </div>
+  );
+};
+
+export default DealConfirmation;
